@@ -33,6 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       });
     });
+
+    // Close when tapping outside drawer
+    document.addEventListener('click', (e) => {
+      if (mobileMenu.classList.contains('open')) {
+        if (!mobileMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+          mobileToggle.classList.remove('active');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      }
+    });
   }
 
   // 3. Menu Filtering

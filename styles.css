@@ -1801,36 +1801,386 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-height: 66px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Header & Navigation */
+  .site-header {
+    height: 66px;
+  }
+  .site-header.scrolled {
+    height: 60px;
+  }
+  .brand-logo {
+    height: 38px;
+  }
+  .brand-title .brand-name {
+    font-size: 1.08rem;
+    letter-spacing: 0.12em;
+  }
+  .brand-title .brand-sub {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+  }
   .nav-links, .nav-actions .header-btn {
     display: none;
   }
   .mobile-toggle {
     display: flex;
   }
+
+  /* Section Spacing */
   .section {
-    padding: 70px 0;
+    padding: 60px 0;
+  }
+  .section-header {
+    margin-bottom: 36px;
+  }
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    margin-bottom: 12px;
+  }
+  .section-subtitle {
+    font-size: 0.94rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + 30px);
+    padding-bottom: 60px;
+  }
+  .hero-content {
+    padding: 20px 8px;
+  }
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 6px 14px;
+    margin-bottom: 18px;
   }
   .hero-title {
-    font-size: 2.6rem;
+    font-size: clamp(2rem, 7.5vw, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+  .hero-description {
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .hero-actions .header-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 0.88rem;
+  }
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 36px;
+    padding-top: 24px;
+  }
+  .stat-num {
+    font-size: 1.8rem;
+  }
+  .stat-label {
+    font-size: 0.68rem;
+  }
+
+  /* Quick Info Strip */
+  .quick-info-strip {
+    padding: 16px 0;
+  }
+  .info-strip-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .info-strip-card {
+    padding: 12px 14px;
+  }
+
+  /* About Section */
+  .about-grid {
+    gap: 32px;
+  }
+  .about-img-main {
+    height: 280px;
+  }
+  .about-floating-card {
+    position: static;
+    margin-top: 14px;
+    max-width: 100%;
+    right: auto;
+    bottom: auto;
+    padding: 14px 18px;
+  }
+  .about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+  }
+  .about-content p {
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin-bottom: 16px;
+  }
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 24px 0;
+  }
+
+  /* Menu Section & Tabs */
+  .menu-tabs-wrapper {
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .menu-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    padding: 6px;
+    gap: 6px;
+  }
+  .menu-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .menu-tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 16px;
+    font-size: 0.78rem;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .menu-card-img-wrap {
+    height: 210px;
+  }
+  .menu-card-body {
+    padding: 20px 16px;
+  }
+  .menu-dish-title {
+    font-size: 1.15rem;
+  }
+  .menu-dish-price {
+    font-size: 1.05rem;
+  }
+  .menu-dish-desc {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+  }
+
+  /* 10-Page Menu Booklet Viewer */
+  .menu-booklet-box {
+    margin-top: 50px;
+    padding: 20px 14px;
+    border-radius: 14px;
+  }
+  .booklet-header h3 {
+    font-size: 1.5rem;
+  }
+  .booklet-pills {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    padding-bottom: 6px;
+    gap: 6px;
+  }
+  .booklet-pills::-webkit-scrollbar {
+    display: none;
+  }
+  .booklet-pill-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 6px 12px;
+    font-size: 0.74rem;
+  }
+  .booklet-viewport {
+    aspect-ratio: 16 / 10;
+    border-radius: 8px;
+  }
+  .booklet-nav-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+  .booklet-prev { left: 8px; }
+  .booklet-next { right: 8px; }
+  .booklet-caption-bar {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    font-size: 0.78rem;
+    margin-top: 12px;
+  }
+
+  /* Gallery Bento on Mobile */
+  .gallery-grid {
+    gap: 14px;
   }
   .gallery-span-8, .gallery-span-4, .gallery-span-4-b, .gallery-span-8-b, .gallery-span-6 {
     grid-column: span 12;
-    height: 280px;
+    height: 240px;
+  }
+  .gallery-item-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 14px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, transparent 100%);
+  }
+
+  /* Reservation Form */
+  .reservation-wrapper {
+    border-radius: 16px;
+  }
+  .reservation-info-col {
+    padding: 30px 18px;
+  }
+  .reservation-info-col h3 {
+    font-size: 1.8rem;
+  }
+  .reservation-form-col {
+    padding: 28px 18px;
   }
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
   .form-group.full-width {
     grid-column: span 1;
   }
+  .form-control {
+    font-size: 16px; /* Prevents auto-zoom on mobile */
+    padding: 12px 14px;
+  }
+
+  /* Location & Map */
+  .location-card-wrapper {
+    border-radius: 16px;
+  }
+  .location-details-col {
+    padding: 28px 18px;
+  }
+  .location-details-col h3 {
+    font-size: 1.7rem;
+  }
+  .map-embed-col {
+    height: 300px;
+    min-height: 280px;
+  }
+  .map-badge-overlay {
+    top: 12px;
+    right: 12px;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+
+  /* Reviews */
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .review-card {
+    padding: 22px 18px;
+  }
+  .review-text {
+    font-size: 0.96rem;
+    margin-bottom: 18px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding-top: 50px;
+    padding-bottom: 24px;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 36px;
   }
-  .menu-booklet-box {
-    padding: 24px 16px;
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
-  .booklet-viewport {
-    aspect-ratio: 4 / 3;
+
+  /* Subpage Hero */
+  .subpage-hero {
+    padding-top: calc(var(--header-height) + 24px);
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .subpage-hero-title {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    margin-bottom: 10px;
+  }
+  .subpage-hero-desc {
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+  .routes-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .story-split-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-bottom: 45px;
+  }
+  .story-split-img {
+    height: 280px;
+  }
+
+  /* Floating Buttons */
+  .floating-action-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 18px;
+    right: 18px;
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.95rem;
+  }
+  .brand-title .brand-name {
+    font-size: 0.98rem;
+    letter-spacing: 0.08em;
+  }
+  .brand-title .brand-sub {
+    font-size: 0.58rem;
+  }
+  .btn-cta-large {
+    padding: 12px 18px;
+    font-size: 0.84rem;
+  }
+  .section-title {
+    font-size: 1.7rem;
   }
 }
 
