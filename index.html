@@ -51,13 +51,12 @@
       <!-- Desktop Nav Links -->
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#menu" class="nav-link">Menu</a></li>
-          <li><a href="#booklet" class="nav-link">Menu Booklet</a></li>
-          <li><a href="#gallery" class="nav-link">Ambience</a></li>
-          <li><a href="#location" class="nav-link">Location</a></li>
-          <li><a href="#reservation" class="nav-link">Reservations</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="reservation.html" class="nav-link">Reservations</a></li>
         </ul>
       </nav>
 
@@ -66,7 +65,7 @@
         <a href="tel:03001888718" class="header-btn btn-outline">
           <i class="fa-solid fa-phone"></i> 0300-1888718
         </a>
-        <a href="#reservation" class="header-btn btn-black">
+        <a href="reservation.html" class="header-btn btn-black">
           Reserve Table
         </a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
@@ -81,13 +80,12 @@
   <!-- Mobile Menu Drawer -->
   <aside class="mobile-menu" id="mobileMenu">
     <ul class="mobile-nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Bistro Noir</a></li>
-      <li><a href="#menu">A La Carte Menu</a></li>
-      <li><a href="#booklet">Official 10-Page Menu</a></li>
-      <li><a href="#gallery">Ambience Gallery</a></li>
-      <li><a href="#location">Find Us on Google Maps</a></li>
-      <li><a href="#reservation">Table Reservation</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Bistro Noir</a></li>
+      <li><a href="menu.html">Full Menu & Booklet</a></li>
+      <li><a href="gallery.html">Ambience & Food Gallery</a></li>
+      <li><a href="location.html">Location & Map</a></li>
+      <li><a href="reservation.html">Table Reservation</a></li>
     </ul>
 
     <div class="mobile-menu-footer">
@@ -126,14 +124,14 @@
       </p>
 
       <div class="hero-actions">
-        <a href="#menu" class="header-btn btn-black btn-cta-large">
-          <i class="fa-solid fa-utensils"></i> Explore Menu
+        <a href="menu.html" class="header-btn btn-black btn-cta-large">
+          <i class="fa-solid fa-utensils"></i> Explore Full Menu
         </a>
-        <a href="#reservation" class="header-btn btn-outline btn-cta-large">
+        <a href="reservation.html" class="header-btn btn-outline btn-cta-large">
           <i class="fa-regular fa-calendar-check"></i> Book A Table
         </a>
-        <a href="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9" target="_blank" rel="noopener noreferrer" class="header-btn btn-outline btn-cta-large">
-          <i class="fa-solid fa-location-dot"></i> Google Maps Directions
+        <a href="location.html" class="header-btn btn-outline btn-cta-large">
+          <i class="fa-solid fa-location-dot"></i> View Location & Map
         </a>
       </div>
 
@@ -268,9 +266,14 @@
             </div>
           </div>
 
-          <a href="#menu" class="header-btn btn-black">
-            <i class="fa-solid fa-book-open"></i> Discover Our Culinary Range
-          </a>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="about.html" class="header-btn btn-black">
+              <i class="fa-solid fa-book-open"></i> Read Full Story
+            </a>
+            <a href="menu.html" class="header-btn btn-outline">
+              <i class="fa-solid fa-utensils"></i> Explore Menu
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -536,6 +539,12 @@
         </article>
 
       </div>
+
+      <div style="text-align:center; margin-top:50px;" class="reveal">
+        <a href="menu.html" class="header-btn btn-black btn-cta-large">
+          <i class="fa-solid fa-utensils"></i> View Complete Menu & Booklet Page
+        </a>
+      </div>
     </div>
   </section>
 
@@ -659,7 +668,12 @@
             <h4>Evening Ambient Lighting</h4>
             <p>Romantic candlelit atmosphere every evening</p>
           </div>
-        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:45px;" class="reveal">
+        <a href="gallery.html" class="header-btn btn-black btn-cta-large">
+          <i class="fa-regular fa-images"></i> Explore Full Photo Gallery
+        </a>
       </div>
     </div>
   </section>
@@ -819,8 +833,11 @@
           </div>
 
           <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:20px;">
-            <a href="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9" target="_blank" rel="noopener noreferrer" class="header-btn btn-black">
-              <i class="fa-solid fa-map-location-dot"></i> Open Google Maps Pin
+            <a href="location.html" class="header-btn btn-black">
+              <i class="fa-solid fa-diamond-turn-right"></i> Directions & Location Guide
+            </a>
+            <a href="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9" target="_blank" rel="noopener noreferrer" class="header-btn btn-outline">
+              <i class="fa-solid fa-map-location-dot"></i> Google Maps Pin
             </a>
             <a href="tel:03001888718" class="header-btn btn-outline">
               <i class="fa-solid fa-phone"></i> Call Bistro Noir
@@ -947,24 +964,24 @@
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Bistro Noir</a></li>
-            <li><a href="#menu">A La Carte Menu</a></li>
-            <li><a href="#booklet">10-Page Menu Booklet</a></li>
-            <li><a href="#gallery">Ambience Gallery</a></li>
-            <li><a href="#reservation">Table Reservation</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Bistro Noir</a></li>
+            <li><a href="menu.html">Full Menu & Booklet</a></li>
+            <li><a href="gallery.html">Ambience Gallery</a></li>
+            <li><a href="location.html">Location & Map</a></li>
+            <li><a href="reservation.html">Table Reservation</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Menu Highlights</h4>
           <ul class="footer-links">
-            <li><a href="#menu">Prime Beef Wellington</a></li>
-            <li><a href="#menu">Truffle & Burrata Pizza</a></li>
-            <li><a href="#menu">Crispy Cordon Bleu</a></li>
-            <li><a href="#menu">Creamy Porcini Risotto</a></li>
-            <li><a href="#menu">Handcrafted Rigatoni</a></li>
-            <li><a href="#menu">Molten Noir Chocolate Cake</a></li>
+            <li><a href="menu.html">Prime Beef Wellington</a></li>
+            <li><a href="menu.html">Truffle & Burrata Pizza</a></li>
+            <li><a href="menu.html">Crispy Cordon Bleu</a></li>
+            <li><a href="menu.html">Creamy Porcini Risotto</a></li>
+            <li><a href="menu.html">Handcrafted Rigatoni</a></li>
+            <li><a href="menu.html">Molten Noir Chocolate Cake</a></li>
           </ul>
         </div>
 

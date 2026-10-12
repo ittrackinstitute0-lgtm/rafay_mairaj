@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu & Pricing | Bistro Noir Restaurant Lahore</title>
+  
+  <meta name="description" content="Explore the full menu and pricing of Bistro Noir Lahore. Featuring artisan 12-inch brick-oven pizzas, prime Beef Wellington, hand-made pasta, risotto, and desserts.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Menu & Pricing | Bistro Noir Restaurant Lahore">
+  <meta property="og:description" content="Browse authentic Italian & French culinary specialties and our official 10-page printed menu booklet.">
+  <meta property="og:image" content="assets/optimized/dish-beef-wellington.jpg">
+  <meta property="og:url" content="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/optimized/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="Bistro Noir Home">
+        <img src="assets/optimized/logo.png" alt="Bistro Noir Logo" class="brand-logo">
+        <div class="brand-title">
+          <span class="brand-name">Bistro Noir</span>
+          <span class="brand-sub">Lahore • MM Alam Road</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="reservation.html" class="nav-link">Reservations</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:03001888718" class="header-btn btn-outline">
+          <i class="fa-solid fa-phone"></i> 0300-1888718
+        </a>
+        <a href="reservation.html" class="header-btn btn-black">
+          Reserve Table
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Bistro Noir</a></li>
+      <li><a href="menu.html">Full Menu & Booklet</a></li>
+      <li><a href="gallery.html">Ambience & Food Gallery</a></li>
+      <li><a href="location.html">Location & Map</a></li>
+      <li><a href="reservation.html">Table Reservation</a></li>
+    </ul>
+
+    <div class="mobile-menu-footer">
+      <p class="contact-quick">
+        <strong>Bistro Noir Lahore</strong><br>
+        MM Alam Road, Block B1, Gulberg III, Lahore<br>
+        Daily: 12:00 PM – 12:00 AM
+      </p>
+      <a href="tel:03001888718" class="header-btn btn-black" style="width:100%; justify-content:center; display:flex;">
+        <i class="fa-solid fa-phone"></i> Call 0300 1888718
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SUBPAGE HERO BANNER
+       ========================================================================== -->
+  <section class="subpage-hero">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>A La Carte & Printed Menu</span>
+      </div>
+      <h1 class="subpage-hero-title">Culinary Menu & Offerings</h1>
+      <p class="subpage-hero-desc">
+        Every plate is prepared upon ordering, featuring imported European cheeses, truffles, artisanal dough, and prime hand-trimmed meats.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MENU SECTION
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-tabs-wrapper reveal">
+        <div class="menu-tabs">
+          <button class="menu-tab-btn active" data-filter="all">All Specialties</button>
+          <button class="menu-tab-btn" data-filter="pizzas">Brick-Oven Pizzas</button>
+          <button class="menu-tab-btn" data-filter="mains">Signature Mains</button>
+          <button class="menu-tab-btn" data-filter="pastas">Pasta & Risotto</button>
+          <button class="menu-tab-btn" data-filter="starters">Starters & Salads</button>
+          <button class="menu-tab-btn" data-filter="desserts">Desserts & Drinks</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid with Original Vivid Food Colors -->
+      <div class="menu-grid">
+
+        <!-- Dish 1 -->
+        <article class="menu-card reveal" data-category="pizzas">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-truffle-burrata-pizza.jpg" alt="Truffle Burrata Pizza" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-crown"></i> Chef's Signature</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Truffle & Burrata Pizza</h3>
+              <span class="menu-dish-price">Rs. 3,295</span>
+            </div>
+            <p class="menu-dish-desc">
+              12-inch brick-oven pizza with bianca white base, black truffle cream, whole fresh Italian burrata ball, sautéed wild mushrooms, and fresh wild rocket.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">12" Brick-Oven • Italian</span>
+              <button class="dish-order-btn" data-dish="Truffle & Burrata Pizza">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="menu-card reveal" data-category="mains">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-beef-wellington.jpg" alt="Beef Wellington Bistro Noir" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-star"></i> Legendary</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Classic Beef Wellington</h3>
+              <span class="menu-dish-price">Rs. 3,850</span>
+            </div>
+            <p class="menu-dish-desc">
+              Prime beef tenderloin fillet wrapped in savory mushroom duxelles, French crêpe, and golden flaky puff pastry, served with rich red wine demi-glace.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">French Gourmet • Prime Beef</span>
+              <button class="dish-order-btn" data-dish="Classic Beef Wellington">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="menu-card reveal" data-category="mains">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-cordon-bleu.jpg" alt="Chicken Cordon Bleu" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-thumbs-up"></i> Best Seller</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Chicken Cordon Bleu</h3>
+              <span class="menu-dish-price">Rs. 2,895</span>
+            </div>
+            <p class="menu-dish-desc">
+              Succulent golden crumbed chicken breast stuffed with smoked turkey bacon and melting aged Gruyère cheese, served on a bed of velvety mustard velouté.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">French Classic • Poultry</span>
+              <button class="dish-order-btn" data-dish="Chicken Cordon Bleu">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="menu-card reveal" data-category="pastas">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-mushroom-risotto.jpg" alt="Creamy Wild Mushroom Risotto" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-seedling"></i> Vegetarian</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Creamy Porcini Risotto</h3>
+              <span class="menu-dish-price">Rs. 2,650</span>
+            </div>
+            <p class="menu-dish-desc">
+              Italian Arborio rice gently simmered in vegetable consommé with sautéed Porcini mushrooms, Parmigiano-Reggiano, French cultured butter, and truffle oil.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">Northern Italian • Risotto</span>
+              <button class="dish-order-btn" data-dish="Creamy Porcini Risotto">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 5 -->
+        <article class="menu-card reveal" data-category="pastas">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-artisan-pasta.jpg" alt="Truffle Rigatoni & Fettuccine" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-wheat-awn"></i> Handmade</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Rigatoni al Tartufo</h3>
+              <span class="menu-dish-price">Rs. 2,750</span>
+            </div>
+            <p class="menu-dish-desc">
+              Al dente rigatoni tossed in a velvety black truffle and garlic cream sauce, enriched with toasted pine nuts, parmesan shavings, and cracked black pepper.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">Artisan Pasta • Italian</span>
+              <button class="dish-order-btn" data-dish="Rigatoni al Tartufo">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 6 -->
+        <article class="menu-card reveal" data-category="mains">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-seafood-salmon.jpg" alt="Pan-Seared Salmon Fillet" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-fish"></i> Fresh Catch</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Norwegian Seared Salmon</h3>
+              <span class="menu-dish-price">Rs. 3,950</span>
+            </div>
+            <p class="menu-dish-desc">
+              Crispy-skin Norwegian salmon fillet served over crushed herb potatoes, tender grilled asparagus spears, and a silky lemon-dill beurre blanc.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">Seafood • French Beurre Blanc</span>
+              <button class="dish-order-btn" data-dish="Norwegian Seared Salmon">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 7 -->
+        <article class="menu-card reveal" data-category="starters">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-caesar-salad.jpg" alt="Caesar Salad Royale" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-bowl-food"></i> Crisp & Fresh</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Caesar Salad Royale</h3>
+              <span class="menu-dish-price">Rs. 1,836</span>
+            </div>
+            <p class="menu-dish-desc">
+              Crisp romaine lettuce tossed in house anchovy dressing, topped with smoked turkey bacon, herb-garlic brioche croutons, aged parmesan, and grilled chicken.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">To Begin • Salads</span>
+              <button class="dish-order-btn" data-dish="Caesar Salad Royale">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 8 -->
+        <article class="menu-card reveal" data-category="pizzas">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-truffle-burrata-pizza.jpg" alt="Roasted Garlic Mushroom Pizza" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-fire"></i> Stone Oven</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Roasted Garlic & Mushroom</h3>
+              <span class="menu-dish-price">Rs. 2,595</span>
+            </div>
+            <p class="menu-dish-desc">
+              Caramelized garlic purée base, fresh mozzarella, button & oyster mushrooms, aromatic thyme, and peppery wild rocket tossed in virgin olive oil.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">12" Pizza • Brick Oven</span>
+              <button class="dish-order-btn" data-dish="Roasted Garlic & Mushroom Pizza">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 9 -->
+        <article class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-chocolate-dessert.jpg" alt="Belgian Dark Chocolate Cake" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-heart"></i> Indulgent</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Belgian Molten Noir Cake</h3>
+              <span class="menu-dish-price">Rs. 1,450</span>
+            </div>
+            <p class="menu-dish-desc">
+              70% Valrhona dark chocolate cake with a molten flowing center, served alongside authentic Madagascar vanilla bean gelato and crushed cocoa nibs.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">Dessert • French Pâtisserie</span>
+              <button class="dish-order-btn" data-dish="Belgian Molten Noir Cake">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 10 -->
+        <article class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-signature-mocktail.jpg" alt="Artisan Botanical Mocktail" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-glass-water"></i> Mixology</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Midnight Berry Fizz</h3>
+              <span class="menu-dish-price">Rs. 980</span>
+            </div>
+            <p class="menu-dish-desc">
+              Muddled blackberries, fresh rosemary syrup, Persian lime juice, and botanical sparkling soda served over hand-carved crystal clear ice.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">Beverages • Craft Mixology</span>
+              <button class="dish-order-btn" data-dish="Midnight Berry Fizz">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 11 -->
+        <article class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img-wrap">
+            <img src="assets/optimized/dish-specialty-coffee.jpg" alt="Specialty Flat White Coffee" class="menu-card-img zoomable">
+            <span class="badge-tag"><i class="fa-solid fa-mug-hot"></i> Barista Roast</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-dish-title">Artisan Flat White / Latte</h3>
+              <span class="menu-dish-price">Rs. 750</span>
+            </div>
+            <p class="menu-dish-desc">
+              Double ristretto extraction of single-origin Colombian beans, combined with silky microfoam milk and finished with bespoke latte art.
+            </p>
+            <div class="menu-card-footer">
+              <span class="menu-dish-cuisine">Barista • Coffee Bar</span>
+              <button class="dish-order-btn" data-dish="Artisan Flat White">Inquire / Order</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ==========================================================================
+           OFFICIAL 10-PAGE PRINTED MENU BOOKLET VIEWER
+           ========================================================================== -->
+      <div class="menu-booklet-box reveal" style="margin-top: 100px;">
+        <div class="booklet-header">
+          <div class="section-tag">Authentic Restaurant Booklet</div>
+          <h3 id="bookletTitle">To Begin (Appetizers & Starters)</h3>
+          <p id="bookletCounter">Page 1 of 10</p>
+        </div>
+
+        <div class="booklet-nav-controls">
+          <div class="booklet-pills">
+            <button class="booklet-pill-btn active">To Begin</button>
+            <button class="booklet-pill-btn">Soup & Salad</button>
+            <button class="booklet-pill-btn">For The Table</button>
+            <button class="booklet-pill-btn">Pizza</button>
+            <button class="booklet-pill-btn">Pasta</button>
+            <button class="booklet-pill-btn">Risotto & Gnocchi</button>
+            <button class="booklet-pill-btn">Prime Beef</button>
+            <button class="booklet-pill-btn">Chicken</button>
+            <button class="booklet-pill-btn">Seafood</button>
+            <button class="booklet-pill-btn">Burger & Sandwich</button>
+          </div>
+        </div>
+
+        <div class="booklet-viewport">
+          <button class="booklet-nav-arrow booklet-prev" id="bookletPrev" aria-label="Previous menu page">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          
+          <img src="assets/menu/menu_p9.png" alt="Official Bistro Noir Menu" id="bookletImg" class="booklet-img zoomable">
+
+          <button class="booklet-nav-arrow booklet-next" id="bookletNext" aria-label="Next menu page">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="booklet-caption-bar">
+          <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to inspect full high-resolution menu</span>
+          <span>Bistro Noir MM Alam Road Official Booklet</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/optimized/logo.png" alt="Bistro Noir Logo" class="brand-logo">
+          <p>
+            Bistro Noir Restaurant Lahore is an elevated culinary sanctuary delivering modern French and Italian gastronomy on MM Alam Road, Gulberg III.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/bistro.noir" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/923001888718" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Google Maps">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Bistro Noir</a></li>
+            <li><a href="menu.html">Full Menu & Booklet</a></li>
+            <li><a href="gallery.html">Ambience Gallery</a></li>
+            <li><a href="location.html">Location & Map</a></li>
+            <li><a href="reservation.html">Table Reservation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Menu Highlights</h4>
+          <ul class="footer-links">
+            <li><a href="menu.html">Prime Beef Wellington</a></li>
+            <li><a href="menu.html">Truffle & Burrata Pizza</a></li>
+            <li><a href="menu.html">Crispy Cordon Bleu</a></li>
+            <li><a href="menu.html">Creamy Porcini Risotto</a></li>
+            <li><a href="menu.html">Handcrafted Rigatoni</a></li>
+            <li><a href="menu.html">Molten Noir Chocolate Cake</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Lahore Branch</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>MM Alam Road, Block B1, Gulberg III, Lahore, Pakistan</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>0300 1888718</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Monday – Sunday: 12:00 PM – 12:00 AM</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>reservations@bistro-noir.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bistro Noir Restaurant Lahore. All Rights Reserved.</p>
+        <p>Crafted with precision & modern noir elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged view" id="lightboxImg" class="lightbox-img">
+    </div>
+  </div>
+
+  <a href="https://wa.me/923001888718?text=Hello%20Bistro%20Noir%20Lahore,%20I%20would%20like%20to%20inquire%20about%20the%20menu." target="_blank" rel="noopener noreferrer" class="floating-action-btn" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

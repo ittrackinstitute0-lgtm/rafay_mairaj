@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery & Ambience | Bistro Noir Restaurant Lahore</title>
+  
+  <meta name="description" content="Browse high-resolution photographs of Bistro Noir Lahore's interior, dining tables, private lounge, courtyard, and gourmet French-Italian dishes.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Photo Gallery & Ambience | Bistro Noir Lahore">
+  <meta property="og:description" content="Experience the architectural noir elegance and artistic dishes of Bistro Noir.">
+  <meta property="og:image" content="assets/optimized/ambiance-lahore-table.jpg">
+  <meta property="og:url" content="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/optimized/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="Bistro Noir Home">
+        <img src="assets/optimized/logo.png" alt="Bistro Noir Logo" class="brand-logo">
+        <div class="brand-title">
+          <span class="brand-name">Bistro Noir</span>
+          <span class="brand-sub">Lahore • MM Alam Road</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="reservation.html" class="nav-link">Reservations</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:03001888718" class="header-btn btn-outline">
+          <i class="fa-solid fa-phone"></i> 0300-1888718
+        </a>
+        <a href="reservation.html" class="header-btn btn-black">
+          Reserve Table
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Bistro Noir</a></li>
+      <li><a href="menu.html">Full Menu & Booklet</a></li>
+      <li><a href="gallery.html">Ambience & Food Gallery</a></li>
+      <li><a href="location.html">Location & Map</a></li>
+      <li><a href="reservation.html">Table Reservation</a></li>
+    </ul>
+
+    <div class="mobile-menu-footer">
+      <p class="contact-quick">
+        <strong>Bistro Noir Lahore</strong><br>
+        MM Alam Road, Block B1, Gulberg III, Lahore<br>
+        Daily: 12:00 PM – 12:00 AM
+      </p>
+      <a href="tel:03001888718" class="header-btn btn-black" style="width:100%; justify-content:center; display:flex;">
+        <i class="fa-solid fa-phone"></i> Call 0300 1888718
+      </a>
+    </div>
+  </aside>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Ambience & Culinary Gallery</span>
+      </div>
+      <h1 class="subpage-hero-title">Visual Elegance & Ambience</h1>
+      <p class="subpage-hero-desc">
+        Take a visual tour inside our MM Alam Road haven. Crisp lighting, plush black leather, artisanal glassware, and colorful gastronomic creations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Gallery Section -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Gallery Grid with Full Original Color Images -->
+      <div class="gallery-grid reveal">
+        <!-- 1. Lahore Main Dining Table -->
+        <div class="gallery-item gallery-span-8">
+          <img src="assets/optimized/ambiance-lahore-table.jpg" alt="Lahore Restaurant Wide Dining Setup" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Lahore Main Dining Room</h4>
+            <p>Spacious, refined dining setting in Block B1, Gulberg III</p>
+          </div>
+        </div>
+
+        <!-- 2. Noir Velvet Lounge -->
+        <div class="gallery-item gallery-span-4">
+          <img src="assets/optimized/interior-lounge.jpg" alt="Noir Lounge & Booths" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Plush Noir Booths</h4>
+            <p>Intimate seating designed for quiet conversations</p>
+          </div>
+        </div>
+
+        <!-- 3. Prime Beef Wellington -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/dish-beef-wellington.jpg" alt="Prime Beef Wellington" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Signature Beef Wellington</h4>
+            <p>Prime beef tenderloin wrapped in flaky golden puff pastry</p>
+          </div>
+        </div>
+
+        <!-- 4. Truffle Burrata Pizza -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/dish-truffle-burrata-pizza.jpg" alt="Truffle Burrata Pizza" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Truffle Burrata Pizza</h4>
+            <p>12" wood-fired sourdough pizza with whole Italian burrata</p>
+          </div>
+        </div>
+
+        <!-- 5. Table Details -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/interior-dining-detail.jpg" alt="Glassware & Dinnerware Detail" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Bespoke French Glassware</h4>
+            <p>Crystal glassware & refined table settings</p>
+          </div>
+        </div>
+
+        <!-- 6. Parisian Courtyard Greenery -->
+        <div class="gallery-item gallery-span-8-b">
+          <img src="assets/optimized/interior-courtyard.jpg" alt="Courtyard Style Ambiance" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Parisian Courtyard Aesthetic</h4>
+            <p>Indoor trees and natural sunlight filtering through</p>
+          </div>
+        </div>
+
+        <!-- 7. Seared Norwegian Salmon -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/dish-seafood-salmon.jpg" alt="Pan-Seared Norwegian Salmon" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Norwegian Seared Salmon</h4>
+            <p>Crispy skin salmon with lemon-dill beurre blanc</p>
+          </div>
+        </div>
+
+        <!-- 8. Chicken Cordon Bleu -->
+        <div class="gallery-item gallery-span-6">
+          <img src="assets/optimized/dish-cordon-bleu.jpg" alt="Chicken Cordon Bleu" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Crispy Chicken Cordon Bleu</h4>
+            <p>Stuffed with smoked meat and melting Gruyère cheese</p>
+          </div>
+        </div>
+
+        <!-- 9. Wild Porcini Risotto -->
+        <div class="gallery-item gallery-span-6">
+          <img src="assets/optimized/dish-mushroom-risotto.jpg" alt="Wild Porcini Risotto" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Creamy Porcini Risotto</h4>
+            <p>Italian Arborio rice with truffle essence & Parmigiano</p>
+          </div>
+        </div>
+
+        <!-- 10. Molten Chocolate Lava Cake -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/dish-chocolate-dessert.jpg" alt="Belgian Molten Noir Cake" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Molten Noir Lava Cake</h4>
+            <p>Valrhona dark chocolate with Madagascar vanilla bean gelato</p>
+          </div>
+        </div>
+
+        <!-- 11. Midnight Berry Fizz Mocktail -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/dish-signature-mocktail.jpg" alt="Signature Botanical Mocktail" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Midnight Berry Fizz</h4>
+            <p>Fresh muddled berries, rosemary syrup & sparkling soda</p>
+          </div>
+        </div>
+
+        <!-- 12. Specialty Flat White -->
+        <div class="gallery-item gallery-span-4-b">
+          <img src="assets/optimized/dish-specialty-coffee.jpg" alt="Specialty Flat White Coffee" class="zoomable">
+          <div class="gallery-item-overlay">
+            <h4>Artisan Flat White</h4>
+            <p>Single origin roast with velvety steamed microfoam</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Reservation Callout -->
+      <div style="margin-top: 80px; text-align: center;" class="reveal">
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 8px;">Experience It In Person</p>
+        <h3 style="font-size: 2.2rem; color: #000000; margin-bottom: 20px;">Ready for an Unforgettable Evening?</h3>
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+          <a href="reservation.html" class="header-btn btn-black btn-cta-large">
+            <i class="fa-regular fa-calendar-check"></i> Reserve A Table Now
+          </a>
+          <a href="location.html" class="header-btn btn-outline btn-cta-large">
+            <i class="fa-solid fa-map-pin"></i> View Restaurant Location
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/optimized/logo.png" alt="Bistro Noir Logo" class="brand-logo">
+          <p>
+            Bistro Noir Restaurant Lahore is an elevated culinary sanctuary delivering modern French and Italian gastronomy on MM Alam Road, Gulberg III.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/bistro.noir" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/923001888718" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/4QzuLWgYh8mXsJWE9" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Google Maps">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Bistro Noir</a></li>
+            <li><a href="menu.html">Full Menu & Booklet</a></li>
+            <li><a href="gallery.html">Ambience Gallery</a></li>
+            <li><a href="location.html">Location & Map</a></li>
+            <li><a href="reservation.html">Table Reservation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Menu Highlights</h4>
+          <ul class="footer-links">
+            <li><a href="menu.html">Prime Beef Wellington</a></li>
+            <li><a href="menu.html">Truffle & Burrata Pizza</a></li>
+            <li><a href="menu.html">Crispy Cordon Bleu</a></li>
+            <li><a href="menu.html">Creamy Porcini Risotto</a></li>
+            <li><a href="menu.html">Handcrafted Rigatoni</a></li>
+            <li><a href="menu.html">Molten Noir Chocolate Cake</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Lahore Branch</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>MM Alam Road, Block B1, Gulberg III, Lahore, Pakistan</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>0300 1888718</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Monday – Sunday: 12:00 PM – 12:00 AM</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>reservations@bistro-noir.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bistro Noir Restaurant Lahore. All Rights Reserved.</p>
+        <p>Crafted with precision & modern noir elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged view" id="lightboxImg" class="lightbox-img">
+    </div>
+  </div>
+
+  <a href="https://wa.me/923001888718?text=Hello%20Bistro%20Noir%20Lahore,%20I%20would%20like%20to%20inquire%20about%20a%20table." target="_blank" rel="noopener noreferrer" class="floating-action-btn" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
